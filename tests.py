@@ -21,6 +21,11 @@ class TestBooksCollector:
         collector = BooksCollector()
         assert collector.get_book_genre(book_name) is None
 
+    def test_get_book_genre_returns_empty_string_for_new_book(self):
+        collector = BooksCollector()
+        collector.add_new_book('Новая книга')
+        assert collector.get_book_genre('Новая книга') == ''
+
     def test_get_books_with_specific_genre_returns_correct_books(self):
         collector = BooksCollector()
         collector.add_new_book('Книга 1')

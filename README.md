@@ -1,3 +1,4 @@
+# qa_python
 add_new_book				    test_add_new_book_name_too_long							        #Проверяет, что книги с именем длиннее 40 символов не добавляются
 set_book_genre				    test_set_book_genre_valid_genre							        #Проверяет установку жанра у добавленной книги
 get_book_genre				    test_get_book_genre_returns_none_if_book_not_added				#Проверяет, что жанр несуществующей книги — None
